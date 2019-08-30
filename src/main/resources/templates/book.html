@@ -1,0 +1,19 @@
+<table border="1">
+    <thead>
+        <tr>
+            <th> Reference </th>
+            <th> Title </th>
+            <th> Review </th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${books.empty}">
+            <td colspan="2"> No Books Available </td>
+        </tr>
+        <tr th:each="book : ${books}">
+        <td><span th:text="${book.reference}"> reference </span></td>
+            <td><span th:text="${book.title}"> Title </span></td>
+            <td><span th:text="${book.review}"> review </span></td>
+        </tr>
+    </tbody>
+</table>

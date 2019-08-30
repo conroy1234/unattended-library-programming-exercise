@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>List of Books</title>
+</head>
+<body>
+<table>
+		<p>
+			Welcome to the books Application! The time is: <strong
+				th:text="${#temporals.format(now, 'dd/MMM/yyyy HH:mm')}">31/12/2015
+				15:00</strong>
+		
+
+<p> search for a book please enter the value in the url above. example </p>http://localhost:8080/book/ 
+followed by the reference you would like to search for
+
+there are three books in the table.<br/>
+copy any of the urls below and past in the browser to a single book<br/>
+
+
+<p>http://localhost:8080/book/BOOK-WILL987</p>
+<p>http://localhost:8080/book/BOOK-GRUFF472</p>
+<p>http://localhost:8080/book/BOOK-POOH222</p>
+
+to retrieve all books summary enter 
+<p>http://localhost:8080/all-books</p>
+	</table>
+
+</body>
+</html>

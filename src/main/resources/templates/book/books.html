@@ -1,0 +1,9 @@
+<table bargin ="1">
+<tbody>
+	<tr th:each="book:${books}">
+		<td th:text="${book.reference}" />
+		<td th:text="${book.title}" />
+		<td th:text="${book.review}" />
+	</tr>
+</tbody>
+</table>
